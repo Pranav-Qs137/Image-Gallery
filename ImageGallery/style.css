@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+	background:
+	radial-gradient(circle closest-side at 50% 20%, rgb(255, 174, 190) 1%, rgba(221,51,85,0) 15%),
+	radial-gradient(circle closest-side at 50% 20%, rgb(255, 174, 190) 1%, rgba(221,51,85,0) 15%),
+	radial-gradient(circle closest-side at 50% 20%, rgb(255, 174, 190) 1%, rgba(221,51,85,0) 15%);
+
+	background-color:rgb(255, 240, 240);
+	background-size:100px 100px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+h1 { 
+	color: #ffffff; 
+	font-family: 'Rouge Script', 
+	cursive; font-size: 45px; 
+	font-weight: normal; line-height: 50px; 
+	margin: 0 0 50px; text-align: center; 
+	text-shadow: 1px 1px 2px #550101; 
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+    grid-gap: 100px;
+	justify-content: space-around;
+}
+
+.galleryImg {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.galleryImg:hover {
+    transform: scale(1.05);
+}
+
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 999;
+    overflow-y: auto;
+}
+
+#selectedImage {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+/*body {
+	background-color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-family: Arial, sans-serif;
+	font-size: 24px;
+	color: #5c5c5c;
+	font-style: normal;
+  }
+
+.container {
+	max-width: 1600px;
+	padding: 50px 20px;
+	margin: 0 auto;
+}
+
+#gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+	grid-gap: 100px;
+	
+}
+
+.galleryImg {
+	max-width: 100%;
+	border-radius: 10px;
+	position:relative;
+	transition: transform 250ms;
+	cursor: pointer;
+}
+
+.galleryImg:hover {
+	opacity: 0.7;
+	transition: all ease-in-out 100ms;
+	transform: translateY(-2px);
+	box-shadow: 3px 3px 10px black;
+}
+
+#popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.95);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 250ms trasform;
+	padding: 50px;
+}
+
+#selectedImage {
+	max-height: 100%;
+} */
